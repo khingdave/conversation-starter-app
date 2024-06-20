@@ -20,7 +20,7 @@ const DeckView = ({ match }) => {
       });
   }, [match.params.id]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div>Loading....</div>;
   if (error) return <div>Error: {error.message}</div>;
   if (!deck) return <div>No deck found.</div>;
   if (deck.cards.length === 0) return <div>No cards found in this deck.</div>;
